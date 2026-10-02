@@ -1,0 +1,171 @@
+{
+  "paper_models": {
+    "Logistic Regression": {
+      "accuracy": 0.9646666666666667,
+      "precision": 0.9266304347826086,
+      "recall": 0.9291553133514986,
+      "f1": 0.927891156462585,
+      "roc_auc": 0.9951925273742156,
+      "confusion": {
+        "tn": 1106,
+        "fp": 27,
+        "fn": 26,
+        "tp": 341
+      },
+      "train_accuracy": 0.9711111111111111,
+      "fit_seconds": 0.018,
+      "theta": [
+        -10.436316995272628,
+        -1.6113527491940876,
+        -1.501238678472733
+      ],
+      "final_cost": 0.0662212545355924,
+      "newton_iterations": 11
+    },
+    "GDA": {
+      "accuracy": 0.8893333333333333,
+      "precision": 0.935064935064935,
+      "recall": 0.5885558583106267,
+      "f1": 0.7224080267558528,
+      "roc_auc": 0.9640942639805105,
+      "confusion": {
+        "tn": 1118,
+        "fp": 15,
+        "fn": 151,
+        "tp": 216
+      },
+      "train_accuracy": 0.9008888888888889,
+      "fit_seconds": 0.011,
+      "theta": [
+        -5.731406569960895,
+        -0.9488716059808515,
+        -0.4058790564642397
+      ]
+    },
+    "Linear SVM": {
+      "accuracy": 0.966,
+      "precision": 0.927027027027027,
+      "recall": 0.9346049046321526,
+      "f1": 0.9308005427408412,
+      "roc_auc": 0.9951732878639574,
+      "confusion": {
+        "tn": 1106,
+        "fp": 27,
+        "fn": 24,
+        "tp": 343
+      },
+      "train_accuracy": 0.9711111111111111,
+      "fit_seconds": 0.502,
+      "theta": [
+        -6.180798997209271,
+        -0.9623601783646685,
+        -0.8878076022294578
+      ]
+    }
+  },
+  "sklearn_validation": {
+    "Logistic Regression": {
+      "sklearn_test_accuracy": 0.9666666666666667,
+      "prediction_agreement": 0.998
+    },
+    "GDA": {
+      "sklearn_test_accuracy": 0.8893333333333333,
+      "prediction_agreement": 1.0
+    },
+    "Linear SVM": {
+      "sklearn_test_accuracy": 0.966,
+      "prediction_agreement": 1.0
+    }
+  },
+  "cross_validation": {
+    "Logistic Regression": {
+      "stratified_5fold_mean": 0.9695,
+      "stratified_5fold_std": 0.006637435917246615,
+      "route_grouped_5fold_mean": 0.9688333333333332,
+      "route_grouped_5fold_std": 0.008003471469028639
+    },
+    "GDA": {
+      "stratified_5fold_mean": 0.8993333333333332,
+      "stratified_5fold_std": 0.010225241100118672,
+      "route_grouped_5fold_mean": 0.899,
+      "route_grouped_5fold_std": 0.029360782611428392
+    },
+    "Linear SVM": {
+      "stratified_5fold_mean": 0.9695,
+      "stratified_5fold_std": 0.006227180564089796,
+      "route_grouped_5fold_mean": 0.9691666666666666,
+      "route_grouped_5fold_std": 0.007691987172809536
+    }
+  },
+  "extensions": {
+    "SVM (RBF kernel)": {
+      "accuracy": 0.972,
+      "precision": 0.9476584022038568,
+      "recall": 0.9373297002724795,
+      "f1": 0.9424657534246575,
+      "roc_auc": 0.9960703300297491,
+      "confusion": {
+        "tn": 1114,
+        "fp": 19,
+        "fn": 23,
+        "tp": 344
+      }
+    },
+    "LR + 38 per-span residuals": {
+      "accuracy": 0.974,
+      "precision": 0.9530386740331491,
+      "recall": 0.9400544959128065,
+      "f1": 0.9465020576131687,
+      "roc_auc": 0.996765357337829,
+      "confusion": {
+        "tn": 1116,
+        "fp": 17,
+        "fn": 22,
+        "tp": 345
+      }
+    }
+  },
+  "localization": {
+    "n_evaluated": 341,
+    "span_accuracy_all_fault_samples": 0.9159456118665018,
+    "n_all_fault_samples": 809,
+    "span_accuracy": 1.0,
+    "element_accuracy": 1.0,
+    "span_and_element_accuracy": 1.0,
+    "span_accuracy_by_fault": {
+      "amplifier_degradation": 1.0,
+      "fiber_cut": 1.0,
+      "fiber_degradation": 1.0,
+      "flapping": 1.0
+    },
+    "ml_localizer_span_accuracy": 0.9970674486803519
+  },
+  "flapping": {
+    "flapping_events": 9,
+    "events_detected": 9,
+    "event_recall": 1.0,
+    "false_alarm_rate_non_flapping_bins": 0.07084517045454546
+  },
+  "early_warning": {
+    "events_with_outage": 18,
+    "flagged_before_or_at_outage": 18,
+    "flagged_strictly_before_outage": 12,
+    "median_lead_minutes": 3.0,
+    "mean_lead_minutes": 8.11111111111111
+  },
+  "dataset": {
+    "samples": 6000,
+    "train": 4500,
+    "test": 1500,
+    "not_healthy_fraction": 0.24483333333333332,
+    "fault_type_counts": {
+      "none": 2705,
+      "fiber_degradation": 1538,
+      "amplifier_degradation": 1165,
+      "flapping": 368,
+      "fiber_cut": 224
+    },
+    "links": 20,
+    "spans_per_link": 19
+  }
+}

@@ -1,0 +1,15 @@
+# Environments
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.DS_Store
+.claude/
+
+# Course hand-outs (not part of the deliverable)
+Guidelines and Instructions_Mini Project Assignment*.pdf
+26647504.pdf
+
+# Build scratch
+docs/build/
