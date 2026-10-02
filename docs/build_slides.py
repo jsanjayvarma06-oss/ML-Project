@@ -187,7 +187,7 @@ def build():
             ln.line.width = Pt(2)
     text(s, 0.8, 5.75, 11, 0.4, "fibre span  ●  amplifier  ●  the orange one is failing — can we spot it from telemetry?",
          size=12, color=ICE)
-    text(s, 0.8, 6.5, 11, 0.4, "Team: Member 1 (SRN)  ·  Member 2 (SRN)", size=16, color=WHITE)
+    text(s, 0.8, 6.5, 11, 0.4, "Team: J Sanjay Varma (PES1UG24CS194)  ·  Kanak Pandey (PES1UG24CS212)", size=16, color=WHITE)
     s.notes_slide.notes_text_frame.text = (
         "Introduce the team and the problem: we reproduce and extend a Stanford paper that predicts optical "
         "link failures from span-loss and amplifier-gain telemetry, and then localises the failing span.")
@@ -473,8 +473,8 @@ def build():
         [("Validated: ", {"bold": True}), ("our models agree with scikit-learn on 99.8–100 % of test predictions", {})],
         [("Tested: ", {"bold": True}), ("physics, interpolation, Eq. 2 identity, localisation", {})],
         [("Honest evaluation: ", {"bold": True}), ("held-out test set, 5-fold CV, unseen-route CV, out-of-fold timeline", {})],
-        [("Contributions: ", {"bold": True}), ("Member 1 — simulator, preprocessing, localisation, demo · "
-                                               "Member 2 — models, evaluation, extensions, report", {})],
+        [("Contributions: ", {"bold": True}), ("J Sanjay Varma — simulator, preprocessing, localisation, demo · "
+                                               "Kanak Pandey — models, evaluation, extensions, report", {})],
     ], size=15)
     footer(s, n)
 

@@ -1,6 +1,7 @@
 # Link Failure Prediction & Localization in Cloud-Scale Networks using Supervised Learning
 
-**UE24CS352A Machine Learning: Mini-Project**
+**UE24CS352A Machine Learning: Mini-Project**  
+Team: J Sanjay Varma (PES1UG24CS194) · Kanak Pandey (PES1UG24CS212)
 
 This project reproduces and extends *Z. Bakhtiari, "Link Failure Prediction and Localization in Cloud Scale
 Networks using Supervised Learning"*. Optical-line telemetry (span loss and amplifier gain against their
@@ -215,10 +216,9 @@ them were flagged before it, with a mean lead time of 8 minutes.
 
 | Member | Contributions |
 |---|---|
-| Member 1 (name / SRN) | Telemetry simulator and optical link budget, preprocessing and feature engineering, localisation and flapping detection, Streamlit demo |
-| Member 2 (name / SRN) | Logistic regression (Newton), GDA and Pegasos SVM implementations, evaluation (CV, ROC, early warning), extensions, write-up and slides |
+| J Sanjay Varma (PES1UG24CS194) | Telemetry simulator and optical link budget, preprocessing and feature engineering, localisation and flapping detection, Streamlit demo |
+| Kanak Pandey (PES1UG24CS212) | Logistic regression (Newton), GDA and Pegasos SVM implementations, evaluation (CV, ROC, early warning), extensions, write-up and slides |
 
-*(Edit this table to reflect the actual split before submitting.)*
 
 ## Reference
 

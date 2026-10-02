@@ -81,7 +81,7 @@ def build():
     s.append(P("Link Failure Prediction and Localization in Cloud-Scale Networks "
                "using Supervised Learning", h1))
     s.append(P("UE24CS352A Machine Learning — Mini-Project Write-up &nbsp;|&nbsp; "
-               "Team: Member 1 (SRN) &amp; Member 2 (SRN)", sub))
+               "Team: J Sanjay Varma (PES1UG24CS194) &amp; Kanak Pandey (PES1UG24CS212)", sub))
 
     s.append(P("1. Problem statement", h2))
     s.append(P(
