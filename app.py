@@ -47,9 +47,14 @@ tab_inject, tab_replay, tab_perf = st.tabs(["🔧 Fault injection", "📈 Networ
 with tab_inject:
     st.subheader("Inject a fault into a 19-span link and watch the models react")
     c1, c2, c3, c4 = st.columns(4)
-    kind = c1.selectbox("Fault type", ["none", "fiber_degradation", "amplifier_degradation", "fiber_cut"])
-    span = c2.slider("Faulty span", 1, C.N_SPANS, 8)
-    sev = c3.slider("Severity [dB]", 0.0, 16.0, 6.0, 0.5, disabled=kind in ("none", "fiber_cut"))
+    # Optional deep link for prepared demo scenarios, e.g. ?fault=fiber_cut&span=12
+    qp = st.query_params
+    kinds = ["none", "fiber_degradation", "amplifier_degradation", "fiber_cut"]
+    kind = c1.selectbox("Fault type", kinds,
+                        index=kinds.index(qp["fault"]) if qp.get("fault") in kinds else 0)
+    span = c2.slider("Faulty span", 1, C.N_SPANS, int(qp.get("span", 8)))
+    sev = c3.slider("Severity [dB]", 0.0, 16.0, float(qp.get("sev", 6.0)), 0.5,
+                    disabled=kind in ("none", "fiber_cut"))
     comp = c4.slider("Amplifier compensation [dB]", 0.0, 3.0, 0.0, 0.5,
                      disabled=kind != "fiber_degradation")
     noise = st.checkbox("Add telemetry noise", value=True)

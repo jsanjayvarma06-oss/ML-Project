@@ -67,6 +67,9 @@ streamlit run app.py
 * **Network replay:** 10 hours of telemetry for any link, with out-of-fold predictions and flapping alarms.
 * **Model performance:** the metrics table and all figures.
 
+Prepared scenarios can be opened directly by URL, for example
+`http://localhost:8501/?fault=fiber_degradation&span=8&sev=9` or `?fault=fiber_cut&span=12`.
+
 ### Command-line prediction
 
 ```bash
